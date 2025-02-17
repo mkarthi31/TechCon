@@ -1,0 +1,187 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 40%, rgba(31, 31, 31, 1) 100%);
+    color: white;
+    text-align: center;
+}
+
+body {
+    margin-top: 80px; 
+}
+
+/*This section is where the navigation menu is presented*/
+header {
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+} 
+
+/*Each link in the navigation menu*/
+nav ul {
+    list-style-type: none;
+    margin: 1 px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+
+nav li {
+    margin-right: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    font-size: 32px;
+    line-height: 32px; 
+}
+
+/* Change colour while hovering over the link */
+a:hover {
+    background-color: #555;
+}
+
+/* Styles for the logo container and logo */
+.logo-container {
+    margin-top: 50px;
+    margin-bottom: 0.1px;
+}
+
+.logo {
+    max-height: 500px;
+}
+
+/* Style for h1, h2, and h4*/
+h1, h2, h4 {
+    margin: 5px 0;
+}
+
+/* Style for p and pre */
+p, pre {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: white;
+}
+
+/* Style for the registration form*/
+#registrationForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#registrationForm label {
+    margin-bottom: 8px;
+}
+
+#registrationForm input, #registrationForm select {
+    margin-bottom: 16px;
+    padding: 8px;
+    width: 300px;
+}
+
+#registrationForm input[type="submit"] {
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+
+#registrationForm input[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* Style for checkboxes to be aligned vertically */
+#registrationForm label input {
+    margin-right: 8px;
+}
+
+.registration-container {
+    display: flex;
+}
+
+.registration-form {
+    flex: 1;
+    padding: 20px; 
+    margin-left: 0px;
+}
+
+.registration-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px; 
+}
+
+.registration-images img {
+    margin-bottom: 10px; 
+    max-height: 50%;
+    max-width: 50%;
+}
+
+/* Style for the schedule table*/
+.schedule-container {
+    margin-top: 100px; 
+}
+
+#scheduleTable {
+    width: 80%;
+    margin: auto; /* Center the table */
+    border-collapse: collapse;
+    font-size: 18px; /* Larger font size for content */
+}
+
+#scheduleTable th, #scheduleTable td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+#scheduleTable th {
+    font-size: 24px; /* Larger font size for table headers */
+    background-color: #333;
+    color: white;
+}
+
+/*Style for the speakers div*/
+.speaker-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.speaker {
+    width: 300px;
+    margin: 20px;
+}
+
+.speaker img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.bio {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*Style for the image container in the index (home) and contact pages*/
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.image-container img {
+    width: 25%; 
+    height: auto;
+    border-radius: 8px;
+}

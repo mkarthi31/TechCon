@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <!--The line below displays an icon in the tab -->
+        <link rel="icon" type="image/x-icon" href="Images/TechCon2023_Icon.ico ">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="speakers.html">Speakers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1>Registration</h1>
+
+        <!--The form below gets the input from the user and uses the script to validate it-->
+        <div class="registration-container">
+            <div class="registration-form">
+
+                <form id="registrationForm" onsubmit="return validateForm()">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number (include the 0):</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required>
+
+                <label>Days Attending:</label>
+                <label><input type="checkbox" name="daysAttending" value="day1"> Day 1: Upcoming Technologies</label>
+                <label><input type="checkbox" name="daysAttending" value="day2"> Day 2: Personal Technology</label>
+                <label><input type="checkbox" name="daysAttending" value="day3"> Day 3: Artificial Intelligence</label>
+
+                <input type="submit" value="Register">
+                </form>
+            </div>
+
+            <!--The div below displays images according to the styling specified in the stylesheet-->
+            <div class="registration-images">
+                <img src="Images\large_presentation2.png" alt="Audience sat on their seats">
+                <img src="Images/large_presentation.png" alt="Audience listening a speech">
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Schedule</title>
+        <!--The line below displays an icon in the tab -->
+        <link rel="icon" type="image/x-icon" href="Images/TechCon2023_Icon.ico ">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script defer src="script.js"></script>
+    </head>
+
+    
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="speakers.html">Speakers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="schedule-container">
+            <h1>Schedule</h1>
+
+            <!-- Filter buttons for each day, on click only data for the relevant day will be shown -->
+            <div class="filter-buttons">
+                <button onclick="filterByDay('Friday')">Friday</button>
+                <button onclick="filterByDay('Saturday')">Saturday</button>
+                <button onclick="filterByDay('Sunday')">Sunday</button>
+                <button onclick="showAllDays()">Show All</button>
+            </div>
+
+            <!--Table with three columns: time, event and day-->
+            <table id="scheduleTable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Day</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>9:00</td>
+                        <td>Opening Event</td>
+                        <td>Friday</td>
+                    </tr>
+                    <tr>
+                        <td>10:30</td>
+                        <td>Summary of the last conference</td>
+                        <td>Friday</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>12:00</td>
+                        <td>Break</td>
+                        <td>Friday</td>
+                    </tr>
+
+                    <tr>
+                        <td>13:30</td>
+                        <td>Presentation - An overview of upcoming technologies</td>
+                        <td>Friday</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>15:30</td>
+                        <td>Guest's speech - Daniel Chan</td>
+                        <td>Friday</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>9:00</td>
+                        <td>Opening Event</td>
+                        <td>Saturday</td>
+                    </tr>
+                    <tr>
+                        <td>10:30</td>
+                        <td>Summary of the previous day</td>
+                        <td>Saturday</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>12:00</td>
+                        <td>Break</td>
+                        <td>Saturday</td>
+                    </tr>
+
+                    <tr>
+                        <td>13:30</td>
+                        <td>Presentation - The future of personal technologies</td>
+                        <td>Saturday</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>15:30</td>
+                        <td>Guest's speech - Charles Cook</td>
+                        <td>Saturday</td>
+                    </tr>
+
+                    <tr>
+                        <td>9:00</td>
+                        <td>Opening Event</td>
+                        <td>Sunday</td>
+                    </tr>
+                    <tr>
+                        <td>10:30</td>
+                        <td>Technical Workshops</td>
+                        <td>Sunday</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>12:00</td>
+                        <td>Break</td>
+                        <td>Sunday</td>
+                    </tr>
+
+                    <tr>
+                        <td>13:30</td>
+                        <td>Presentation - An overview of upcoming technologies</td>
+                        <td>Sunday</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>15:30</td>
+                        <td>Guest's speech - Amanda Hughes</td>
+                        <td>Sunday</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

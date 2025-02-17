@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <!--The line below displays an icon in the tab -->
+        <link rel="icon" type="image/x-icon" href="Images/TechCon2023_Icon.ico ">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="speakers.html">Speakers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h1>Contact Us</h1>
+                <p>Email - General queries: general@techcon.com</p>
+                <p>Email - Event queries: event@techcon.com</p>
+                <p>Email - Management: management@techcon.com</p>
+                <p>Phone: +44 1234 567890</p>               
+            </div>
+            
+            <!--The form below gets the input from the user and uses the script to validate it-->
+            <div class="contact-form">
+                <form id="contactForm" onsubmit="return validateContactForm()">
+                    <label for="userEmail">Your Email:</label>
+                    <input type="email" id="userEmail" name="userEmail" required>
+    
+                    <label for="userMessage">Your Message:</label>
+                    <textarea id="userMessage" name="userMessage" rows="4" required></textarea>
+    
+                    <p>Please allow 3 working days to receive a reply to your message.</p>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <!--The div below displays images according to the styling specified in the stylesheet-->
+        <div class="image-container">
+            <img src="Images/presentation.png" alt="Man presenting">
+            <img src="Images/presentation2.png" alt="Man presenting to a small audience">
+            <img src="Images/large_presentation.png" alt="Audience listening to a speech">
+            <img src="Images/large_presentation2.png" alt="Audience sat on their seats">
+        </div>
+    </body>
+
+</html>
