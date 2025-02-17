@@ -1,5 +1,23 @@
-# TechCon #AcademicWork
-This website is based entirely on HTML and CSS, which I developed for an assignment in my first year of BSc Computer Science.
+# TechCon 2023 Website #AcademicWork
+
+This project is a multi-page, responsive website for managing the TechCon 2023 conference. It includes pages for event details, registration, schedule, speakers, and contact information.
+
+# Features
+Multi-page structure:
+* index.html – Home page with event details
+* register.html – Registration form
+* schedule.html – Event schedule
+* speakers.html – Speaker profiles
+* contact.html – Contact form and details
+* Consistent navigation across all pages
+* Responsive design (CSS) for mobile and desktop views
+JavaScript features:
+Form validation (register.html) using JavaScript
+
+# Technologies Used
+* HTML – Structure
+* CSS – Styling and responsiveness
+* JavaScript – Interactivity
 
 Home Page: 
 ![image](https://github.com/user-attachments/assets/9b973d3a-d1f1-417b-a440-d26fc12b8e90)
